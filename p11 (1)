@@ -1,0 +1,10 @@
+#include <stdio.h>
+int main(){
+	int student;
+	int adult;
+	student = 1000;
+	adult = 5000;
+	printf("%d", 2 * adult > 15 * student);
+	
+	return 0;
+}
