@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+	
+	int j;
+	
+	
+	printf("정수 내놔 ");
+	scanf("%d", &j);
+	
+	if(j > 0){
+		printf("양수");
+	}
+	
+	else if(j < 0){
+		printf("음수");
+	}
+	
+	
+	
+	
+	
+	
+	return 0; 
+}
