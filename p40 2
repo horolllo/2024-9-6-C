@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main(){
+	
+	int j;
+	
+	
+	printf("정수 내놔 ");
+	scanf("%d", &j);
+	
+	if(j % 2 == 0){
+		printf("짝수");
+	}
+	
+	else{
+		printf("홀수");
+	}
+	
+	
+	
+	
+	
+	
+	return 0; 
+}
