@@ -1,0 +1,27 @@
+#include<stdio.h>
+int main(){
+	
+	
+	int a, b, c, d;
+	
+	for(a=1; a<=5; a++){
+		for(b = a; b <= 4; b++){
+			printf("  ");
+		}
+		for(c = 1; c <= a; c++){
+			printf("%d ", c);
+		}
+		for(d = a-1; d >= 1; d--){
+			printf("%d ", d);
+		}
+		
+		
+		
+		
+		
+		printf("\n");
+	}
+	
+	
+	return 0;
+}
