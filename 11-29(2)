@@ -1,0 +1,15 @@
+#include<stdio.h>
+int power(int a, int b){
+	int t = 1;
+	for(int i = 1; i <= b; i++){
+		t = t * a;
+	}
+	return t;
+}
+int main(){
+	int a, b, n, r;
+	scanf("%d %d", &a, &b);	
+	r = power(a, b);
+	printf("%d", r);
+	return 0;
+}
