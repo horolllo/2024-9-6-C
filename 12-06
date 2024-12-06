@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+
+int maxAbs(int a, int b){
+	
+	int n1, n2;
+	n1 = a;
+	n2 = b;
+	
+	if(a<0){
+		n1 = a * -1;
+	}
+	
+	if(b<0){
+		n2 = b * -1;
+	}
+	
+	
+	return n1>n2? a:b;
+}
+
+int main(){
+	int a, b;
+	int result;
+	
+	scanf("%d %d", &a, &b);
+	
+	result = maxAbs(a, b);
+	
+	printf("%d\n", result);
+	
+	return 0;
+}
