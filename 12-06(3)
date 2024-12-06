@@ -1,0 +1,11 @@
+#include <stdio.h>
+int main(){
+	int page[10] = {123, 57, 67, 86};
+	
+	for(int j = 0; j < 10; j++){
+		printf("%d\n", page[j]);
+	}
+	
+	return 0;
+	
+}
