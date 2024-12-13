@@ -1,0 +1,17 @@
+#include <stdio.h>
+int main(){
+	
+	char str[] = "Hi C3 coding";
+	
+	int i = 0;
+	
+	while(str[i]){
+		printf("%c", str[i]);
+		i++;
+	}
+	
+	
+	
+	return 0;
+	
+}
