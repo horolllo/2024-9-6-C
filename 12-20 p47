@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+void AddNum(int *pa, int *pb, int *pc){
+	*pc = *pa + *pb;
+}
+
+void SubNum(int *pa, int *pb, int *pc){
+	*pc = *pa - *pb;
+}
+
+void MulNum(int *pa, int *pb, int *pc){
+	*pc = *pa * *pb;
+}
+
+void DivNum(int *pa, int *pb, double *pd){
+	*pd = *pa / *pb;
+}
+int main(){
+	
+	int a, b, c;
+	double d;
+	int *pa = &a, *pb = &b, *pc = &c;
+	double *pd = &d;
+	
+	printf("정수 입력: ");
+	scanf("%d %d", pa, pb);	
+	
+	AddNum(pa, pb, pc);
+	printf("%d \n", *pc);
+	
+	SubNum(pa, pb, pc);
+	printf("%d \n", *pc);
+	
+	MulNum(pa, pb, pc);
+	printf("%d \n", *pc);
+	
+	DivNum(pa, pb, pd);
+	printf("%lf \n", *pd);
+	
+	
+	return 0;
+}
