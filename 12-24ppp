@@ -1,0 +1,49 @@
+#include <stdio.h>
+
+void InputInt(int n){
+	scanf("%d", &n);
+}
+
+void InputDouble(double d){
+	scanf("%lf", &d);
+}
+
+void PrintInt(int pn){
+	printf("%d\n", pn);
+}
+
+void PrintDouble(double pd){
+	printf("%lf\n", pd);
+}
+
+void ChangeInt(int pn){
+	printf("%d\n", pn * -1);
+}
+
+void ChangeDouble(double pd){
+	printf("%lf\n", pd * -1.0);
+}
+
+
+int main(){
+	
+	int n;
+	double d;
+	
+	int *pn = &n;
+	double *pd = &d;
+	
+	InputInt(*pn);
+	
+	InputDouble(*pd);
+	
+	PrintInt(*pn);
+	
+	PrintDouble(*pd);
+	
+	ChangeInt(*pn);
+	
+	ChangeDouble(*pd);
+	
+	return 0;
+}
