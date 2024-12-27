@@ -1,0 +1,23 @@
+#include <stdio.h>
+int main(){
+	
+	int i, j, grade;
+	int a = 0;
+	int ar[6][9] = {{23, 22, 27, 21, 24},
+					{21, 22, 25, 24, 23},
+					{20, 23, 22, 21, 24},
+					{25, 26, 24, 27, 28},
+					{26, 24, 28, 29, 26},
+					{27, 28, 29, 26, 27}};
+	
+	scanf("%d", &grade);
+	
+	for(j = 0; j <5; j++){
+			printf("%d학년 %d반 : %d명\n", grade, j+1, ar[grade-1][j]);
+			a += ar[grade-1][j];
+		}
+		
+	printf("총 합 %d", a);
+
+	return 0;
+} 
