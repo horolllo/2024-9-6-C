@@ -1,0 +1,14 @@
+#include <stdio.h>
+int main(){
+	int ar[] = {12, 22, 32, 42, 52, 62, 72, 82, 92, 102, 112};
+	int *p;
+	
+	p = ar;
+	
+	for(int i = 0; i < (sizeof(ar)/sizeof(int)); i++){
+		printf("%d ", *(p + i));
+	}
+	
+	
+	return 0;
+}
