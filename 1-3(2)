@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+
+void InputData(int *p){
+	for(int i = 0; i < 10; i++){
+		*(p + i) = rand()%100;
+	}
+}
+
+
+void PrintfArry(int ar[]){
+	for(int i = 0; i < 10; i++){
+		printf("%d ", ar[i]);
+	}
+	printf("\n");
+}
+
+int GetMax(int *ar){
+	int max = -1;
+	for(int i = 0; i < 10; i++){
+		if(max < *(ar + i)){
+			max = *(ar +i);
+		}
+	}
+	return max;
+}
+
+int GetMin(int *ar){
+	int min = 100;
+	for(int i = 0; i < 10; i++){
+		if(min > *(ar + i)){
+			min = *(ar + i);
+		}
+	}
+	return min;
+}
+
+
+
+int main(){
+	
+	srand((unsigned) time(NULL));
+	
+	int ar[10] = {0};
+	int max, min;
+
+	InputData(ar);
+	PrintfArry(ar);
+	
+	max = GetMax(ar);
+	min = GetMin(ar);
+	
+	printf("max = %d, min = %d", max, min);
+	
+	return 0;
+}
