@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+struct Person {
+	char name[10];
+	int age;
+	double height;
+};
+
+int main(){
+	struct Person m1;
+	struct Person m2 = {"허난설현", 13, 159.9};
+	struct Person m3;
+	struct Person m4;
+	
+	strcpy(m1.name, "허균");
+	m1.age = 19;
+	m1.height = 168.34;
+	printf("%s, %d, %lf\n", m1.name, m1.age, m1.height);
+	printf("%s, %d, %lf\n", m2.name, m2.age, m2.height);
+	
+	scanf("%s %d %lf", m3.name, &m3.age, &m3.height);
+	printf("%s %d %lf\n", m3.name, m3.age, m3.height);
+	
+	
+	return 0; 
+}
