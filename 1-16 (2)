@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+struct Circle{
+	int x;
+	int y;
+	double r;
+};
+
+int main(){
+	struct Circle c1, c3, c4;
+	c1.x = 4;
+	c1.y = 5;
+	c1.r = 7.3;
+	printf("x: %d | y: %d | r: %lf \n", c1.x, c1.y, c1.r);
+	
+	struct Circle c2;
+	c2.x = 2;
+	c2.y = 3;
+	c2.r = 5.4;
+	printf("x: %d | y: %d | r: %lf \n", c2.x, c2.y, c2.r);
+	
+	c3.x = c1.x;
+	c3.y = c1.y;
+	c3.r = c1.r;
+	printf("x: %d | y: %d | r: %lf \n", c3.x, c3.y, c3.r);
+	
+	c4.x = c2.y;
+	c4.y = c2.x;
+	c4.r = 456.1972;
+	printf("x: %d | y: %d | r: %lf \n", c4.x, c4.y, c4.r);
+	
+	return 0;
+}
