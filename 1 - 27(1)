@@ -1,0 +1,29 @@
+#include <stdio.h>
+
+void Ccude();
+void Coding();
+
+int main(){
+	Ccude();
+	Ccude();
+	Ccude();
+	Coding();
+	Coding();
+	Coding();
+	
+	return 0;
+}
+
+void Ccude(){
+	int cnt = 0;
+	
+	cnt++;
+	printf("%d 씨큐브\n", cnt);
+}
+
+void Coding(){
+	static int cnt = 0;
+	
+	cnt++;
+	printf("%d 코딩\n", cnt); 
+}
