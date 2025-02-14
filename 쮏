@@ -14,10 +14,12 @@ int main(){
 		printf("커서의 위치를 입력하세요: ");
 		scanf("%d %d", &pos.X, &pos.Y);
 		
+		system("cls"); 
+		
 		SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
 		
 		
-		printf("▣");
+		printf("♬");
 	}while(pos.X <= 80 && pos.Y <= 24);
 		
 	return 0; 
