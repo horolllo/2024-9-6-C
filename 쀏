@@ -1,0 +1,44 @@
+#include<stdio.h>
+#include<conio.h>
+#include<windows.h> 
+int main(){
+	int x, y;
+	COORD pos = { 2, 22 };
+	
+	pos.X = 12;
+	pos.Y = 54;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	printf("←: 커서 시작위치(%d, %d)", pos.X, pos.Y);
+	_getch();
+	
+	pos.X = 34;
+	pos.Y = 7;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	printf("←: 커서 시작위치(%d, %d)", pos.X, pos.Y);
+	_getch();
+	
+	
+	pos.X = 88;
+	pos.Y = 12;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	printf("←: 커서 시작위치(%d, %d)", pos.X, pos.Y);
+	_getch();
+	
+	
+	pos.X = 39;
+	pos.Y = 81;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	printf("←: 커서 시작위치(%d, %d)", pos.X, pos.Y);
+	_getch();
+	
+	
+	pos.X = 3;
+	pos.Y = 4;
+	SetConsoleCursorPosition(GetStdHandle(STD_OUTPUT_HANDLE), pos);
+	printf("←: 커서 시작위치(%d, %d)", pos.X, pos.Y);
+	_getch();
+	
+	
+		
+	return 0; 
+}
