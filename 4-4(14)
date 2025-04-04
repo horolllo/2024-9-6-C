@@ -1,0 +1,5 @@
+g1 = input("1: ")
+g2 = input("2: ")
+g3 = input("3: ")
+ga = [g1, g2, g3]
+print(ga)
