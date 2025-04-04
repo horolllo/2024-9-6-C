@@ -1,0 +1,12 @@
+a = 'Hello World'
+print(a.count('l'))
+
+b = 'python'
+print(b.find('p'))
+
+c = 'oh!my!god'
+print(c.split('!'))
+
+
+
+# ㈜「현우 주식회사」
