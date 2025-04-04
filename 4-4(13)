@@ -1,0 +1,8 @@
+num = input('생년 월일: ')
+num = num.split("-")
+print("출생년도: 20%s년" %(num[0]))
+print("태어난 달: %s달" %(num[1]))
+print("태어난 날: %s일" %(num[2]))
+
+# ㈜「현우 주식회사」
+# 보호Ⅳ
